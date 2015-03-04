@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js"></script>
+<script src="library.js"></script>
+<script src="linearEquation.js"></script>
+</head>
+
+
+<body>
+<input type="text" name="equation" id="equation"/><br>
+<input type="button" id="parse" value="parse">
+
+
+<div id="coefficient" style="visibility:hidden;">
+
+a:<input type="text" name="x-coefficient" id="x-coefficient" size="4"/><br>
+b:<input type="text" name="y-coefficient" id="y-coefficient" size="4"/><br>
+c:<input type="text" name="constant" id="constant" size="4" /><br>
+
+Min:<input type="text" name="x-min" id="x-min" size="5"/>
+Max:<input type="text" name="x-max" id="x-max" size="5"/><br>
+Step:<input type="text" name="step" id="step" size="5"/><br>
+<input type="button" value="draw_graph" id="draw"/>
+</div>
+<div id="graph" style="visibility:hidden;">
+<canvas id="myCanvas" width="578" height="200"></canvas>
+</div>
+
+</body>
+
+<html>
